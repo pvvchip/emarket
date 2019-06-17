@@ -131,3 +131,55 @@ databaseChangeLog:
               - column:
                   name: role_id
                   value: 1
+
+  - changeSet:
+      id: 7
+      author: vladimir_pastukhov
+      comment: "Create table products"
+      changes:
+        - createTable:
+            tableName: products
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(50)
+                  constraints:
+                    unique: true
+                    nullable: false
+              - column:
+                  name: price
+                  type: DECIMAL
+              - column:
+                  name: photo_link
+                  type: varchar(50)
+
+  - changeSet:
+      id: 8
+      author: vladimir_pastukhov
+      comment: "Create default product"
+      changes:
+        - insert:
+            tableName: products
+            columns:
+              - column:
+                  name: name
+                  value: "mouse"
+              - column:
+                  name: price
+                  value: "10.20"
+        - insert:
+            tableName: products
+            columns:
+              - column:
+                  name: name
+                  value: "PC"
+              - column:
+                  name: price
+                  value: "1000.60"
