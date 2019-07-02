@@ -1,4 +1,4 @@
-package ru.pvvchip.emarket.service;
+package ru.pvvchip.emarket.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
@@ -10,6 +10,7 @@ import ru.pvvchip.emarket.persist.model.Role;
 import ru.pvvchip.emarket.persist.model.User;
 import ru.pvvchip.emarket.persist.repo.RoleRepository;
 import ru.pvvchip.emarket.persist.repo.UserRepository;
+import ru.pvvchip.emarket.service.UserService;
 import ru.pvvchip.emarket.service.model.SystemUser;
 
 import javax.transaction.Transactional;
@@ -19,15 +20,15 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class UserServiceJpaImpl implements UserService {
+public class UserServiceImpl implements UserService {
 
     private UserRepository userRepository;
     private RoleRepository roleRepository;
     private BCryptPasswordEncoder passwordEncoder;
 
     @Autowired
-    public UserServiceJpaImpl(UserRepository userRepository, RoleRepository roleRepository,
-                              BCryptPasswordEncoder passwordEncoder) {
+    public UserServiceImpl(UserRepository userRepository, RoleRepository roleRepository,
+                           BCryptPasswordEncoder passwordEncoder) {
         this.userRepository = userRepository;
         this.roleRepository = roleRepository;
         this.passwordEncoder = passwordEncoder;
