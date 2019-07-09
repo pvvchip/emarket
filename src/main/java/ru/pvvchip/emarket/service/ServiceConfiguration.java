@@ -13,7 +13,6 @@ import ru.pvvchip.emarket.persist.repo.RoleRepository;
 import ru.pvvchip.emarket.persist.repo.UserRepository;
 import ru.pvvchip.emarket.service.impl.CartServiceImpl;
 import ru.pvvchip.emarket.service.impl.ProductServiceImpl;
-import ru.pvvchip.emarket.service.impl.UserServiceImpl;
 
 @Configuration
 public class ServiceConfiguration {
@@ -23,7 +22,7 @@ public class ServiceConfiguration {
     @Bean
     public UserService userService(UserRepository userRepository, RoleRepository roleRepository,
                                    BCryptPasswordEncoder passwordEncoder) {
-        return new UserServiceImpl(userRepository, roleRepository, passwordEncoder);
+        return new UserService(userRepository, roleRepository, passwordEncoder);
     }
 
     @Bean
