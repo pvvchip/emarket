@@ -3,9 +3,10 @@ package ru.pvvchip.emarket.service.model;
 import ru.pvvchip.emarket.persist.model.Role;
 import ru.pvvchip.emarket.persist.model.User;
 
+import java.io.Serializable;
 import java.util.Set;
 
-public class SystemUser {
+public class SystemUser implements Serializable {
 
     private Long id;
 
@@ -26,18 +27,18 @@ public class SystemUser {
     }
 
     public SystemUser(String userName, String password, String firstName,
-                      String lastName, String email, Set<Role> roles) {
+                      String lastName, String email) {
         this.userName = userName;
         this.password = password;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
-        this.roles = roles;
     }
 
     public SystemUser(User user) {
         this.id = user.getId();
         this.userName = user.getUserName();
+        this.password = user.getPassword();
         this.firstName = user.getFirstName();
         this.lastName = user.getLastName();
         this.email = user.getEmail();
