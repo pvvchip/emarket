@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.web.bind.annotation.RestController;
-import ru.geekmarket.chatbot.service.ChatBotService;
+import ru.emarket.chatboot.service.ChatBotService;
 
 @RestController
 public class ChatBotControllerImpl implements ChatBotController {
