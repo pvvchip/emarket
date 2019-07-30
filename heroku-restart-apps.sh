@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
 
-heroku dyno:restart --app emarket-chatbot
-heroku dyno:restart --app emarket-ui
-heroku dyno:restart --app emarket-eureka
+heroku dyno:restart --app geek-market-chatbot
+heroku dyno:restart --app geek-market-ui
+heroku dyno:restart --app geek-market-eureka

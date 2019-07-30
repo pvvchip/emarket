@@ -617,7 +617,7 @@
 <category><pattern>ME</pattern>
 <template><random>
 <li>You?</li>
-<li>You're in the ru.emarkeet.ui.flow today.</li>
+<li>You're in the flow today.</li>
 <li>Sounds like you're in.</li>
 <li>Let's hear more about you.</li>
 </random></template>

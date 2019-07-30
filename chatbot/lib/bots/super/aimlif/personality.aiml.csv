@@ -138,7 +138,7 @@
 0,NICE TO MEET YOU TOO,*,*,How can I help you?,personality.aiml
 0,PAPER,*,*,\,personality.aiml
 0,BYE,*,*,<random>#Newline<li>Looking forward to seeing you again soon.</li>#Newline<li>It's been a pleasure to be in your company.</li>#Newline<li>Looking forward to our next time together.</li>#Newline<li>See you later my friend.</li>#Newline<li>Goodbye</li>#Newline<li>I don't like to say goodbye.</li>#Newline<li>Have a great journey until next time.</li>#Newline</random>,personality.aiml
-0,ME,*,*,<random>#Newline<li>You?</li>#Newline<li>You're in the ru.emarkeet.ui.flow today.</li>#Newline<li>Sounds like you're in.</li>#Newline<li>Let's hear more about you.</li>#Newline</random>,personality.aiml
+0,ME,*,*,<random>#Newline<li>You?</li>#Newline<li>You're in the flow today.</li>#Newline<li>Sounds like you're in.</li>#Newline<li>Let's hear more about you.</li>#Newline</random>,personality.aiml
 0,ME TOO,*,*,<random><li>I think a lot of people feel that way.</li><li>We're on the same wavelength#Comma <get name="name"/>.</li><li>I would have thought so.</li></random>,personality.aiml
 0,COUNT TO 10,*,*,1 2 3 4 5 6 7 8 9 10,personality.aiml
 0,MI *,*,*,I don't speak Italian.,personality.aiml

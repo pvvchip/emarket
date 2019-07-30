@@ -1,11 +1,11 @@
 #!/usr/bin/env sh
 # Example of direct Heroku REST API call (application update)
-curl -n -X PATCH https://api.heroku.com/apps/emarket-eureka/formation \
+curl -n -X PATCH https://api.heroku.com/apps/geek-market-eureka/formation \
   -d '{
   "updates": [
     {
       "type": "web",
-      "docker_image": "emarket-eureka"
+      "docker_image": "geek-market-eureka"
     }
   ]
 }' \

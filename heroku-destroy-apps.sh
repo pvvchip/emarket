@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
 
-heroku apps:destroy emarket-ui --confirm emarket-ui
-heroku apps:destroy emarket-chatbot --confirm emarket-chatbot
-heroku apps:destroy emarket-eureka --confirm emarket-eureka
+heroku apps:destroy geek-market-ui --confirm geek-market-ui
+heroku apps:destroy geek-market-chatbot --confirm geek-market-chatbot
+heroku apps:destroy geek-market-eureka --confirm geek-market-eureka
