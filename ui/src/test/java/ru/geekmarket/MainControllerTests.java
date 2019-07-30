@@ -32,10 +32,18 @@ public class MainControllerTests {
                 .andExpect(view().name("index"));
     }
 
+
     @Test
     public void testCartPage() throws Exception {
         mvc.perform(get("/cart").contentType(MediaType.TEXT_HTML))
                 .andExpect(status().isOk())
                 .andExpect(view().name("cart"));
+    }
+
+    @Test
+    public void testProduct() throws Exception {
+        mvc.perform(get("/product").contentType(MediaType.TEXT_HTML))
+                .andExpect(status().isOk())
+                .andExpect(view().name("product"));
     }
 }
