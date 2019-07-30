@@ -36,6 +36,10 @@ public class UserServiceJpaImpl implements UserService {
         this.passwordEncoder = passwordEncoder;
     }
 
+    public UserServiceJpaImpl() {
+
+    }
+
     @Override
     public Optional<SystemUser> findById(Long id) {
         return userRepository.findById(id).map(SystemUser::new);
