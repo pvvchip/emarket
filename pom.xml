@@ -20,6 +20,7 @@
         <module>eureka</module>
         <module>rabbitmq-demo</module>
         <module>product-import</module>
+        <module>ui-test</module>
     </modules>
 
 </project>
