@@ -12,5 +12,6 @@ Feature: Login
     Examples:
       | username | password | name |
       | admin | admin | admin |
+      | admin3 | admin3 | admin |
 
 
